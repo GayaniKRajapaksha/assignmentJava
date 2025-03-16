@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Bookings</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Bookings List</h1>
+        
+        <!-- Table to display bookings -->
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Booking ID</th>
+                    <th>Vehicle Type</th>
+                    <th>Pickup Location</th>
+                    <th>Drop Off Location</th>
+                    <th>Contact Number</th>
+                </tr>
+            </thead>
+            <tbody id="bookingsTableBody">
+                <!-- Bookings data will be populated here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Function to fetch and display bookings
+        function fetchBookings() {
+            const apiUrl = 'http://localhost:8080/MegaCabBack/resources/bookings';
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('bookingsTableBody');
+                    tableBody.innerHTML = ''; // Clear existing rows
+
+                    // Loop through the bookings data and create table rows
+                    data.forEach(booking => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${booking.bookingID}</td>
+                            <td>${booking.vehicleType}</td>
+                            <td>${booking.pickup}</td>
+                            <td>${booking.dropOff}</td>
+                            <td>${booking.contactNo}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching bookings:', error);
+                    alert('Failed to fetch bookings. Please try again later.');
+                });
+        }
+
+        // Fetch bookings when the page loads
+        window.onload = fetchBookings;
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

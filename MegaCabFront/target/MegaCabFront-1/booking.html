@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Booking</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Create Booking</h1>
+        
+        <!-- Booking Form -->
+        <div class="card shadow">
+            <div class="card-body">
+                <form id="bookingForm" onsubmit="event.preventDefault(); submitBooking();">
+                    <!-- Vehicle ID Field -->
+                    <div class="mb-3">
+                        <label for="vehicleType" class="form-label">Vehicle ID</label>
+                        <input type="text" class="form-control" id="vehicleType" name="vehicleType" required>
+                    </div>
+
+                    <!-- Pickup Location Field -->
+                    <div class="mb-3">
+                        <label for="pickup" class="form-label">Pickup Location</label>
+                        <input type="text" class="form-control" id="pickup" name="pickup" required>
+                    </div>
+
+                    <!-- Drop Off Location Field -->
+                    <div class="mb-3">
+                        <label for="dropOff" class="form-label">Drop Off Location</label>
+                        <input type="text" class="form-control" id="dropOff" name="dropOff" required>
+                    </div>
+
+                    <!-- Contact Number Field -->
+                    <div class="mb-3">
+                        <label for="contactNo" class="form-label">Contact Number</label>
+                        <input type="tel" class="form-control" id="contactNo" name="contactNo" required>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to submit the booking data via POST request
+        function submitBooking() {
+            // Get values from form fields
+            var vehicleType = document.getElementById("vehicleType").value;
+            var pickup = document.getElementById("pickup").value;
+            var dropOff = document.getElementById("dropOff").value;
+            var contactNo = document.getElementById("contactNo").value;
+
+            // Prepare the data to be sent in JSON format
+            var bookingData = {
+                "vehicleType": vehicleType,
+                "pickup": pickup,
+                "dropOff": dropOff,
+                "contactNo": parseInt(contactNo) // Convert contactNo to integer
+            };
+            
+            console.log(JSON.stringify(bookingData));
+
+            // Send POST request to add booking API
+            fetch('http://localhost:8080/MegaCabBack/resources/bookings', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(bookingData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle response from the server
+                if (data.message) {
+                    alert(data.message); // Display success or error message
+                } else {
+                    alert("Error: " + JSON.stringify(data));
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while submitting the booking.');
+            });
+        }
+    </script>
+
+    <!-- Bootstrap JS and dependencies (optional, if you need Bootstrap JS features) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

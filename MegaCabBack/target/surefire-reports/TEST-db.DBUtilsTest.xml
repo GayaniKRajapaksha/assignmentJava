@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="10" failures="10" name="db.DBUtilsTest" time="0.535" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\bin"/>
+    <property name="java.vm.version" value="25.442-b06"/>
+    <property name="jdk.vendor.version" value="Zulu 8.84.0.15-CA-win64"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\assignmentJava\MegaCabBack"/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="test" value="db.DBUtilsTest"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\assignmentJava\MegaCabBack"/>
+    <property name="java.runtime.version" value="1.8.0_442-b06"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-17\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans-17\netbeans\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-17\bin;C:\apache-maven-3.9.9\bin;C:\apache-tomcat-11.0.5\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Administrator\.dotnet\tools;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\NetBeans-17\netbeans\java\maven/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\NetBeans-17\netbeans\java\maven\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Asia/Colombo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans-17\netbeans\java\maven\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=db.DBUtilsTest -Dmaven.ext.class.path=C:\Program Files\NetBeans-17\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 --no-transfer-progress process-test-classes surefire:test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_442"/>
+    <property name="java.ext.dirs" value="C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\lib\resources.jar;C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\lib\rt.jar;C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\lib\sunrsasign.jar;C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\lib\jsse.jar;C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\lib\jce.jar;C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\lib\charsets.jar;C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\lib\jfr.jar;C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\lib\cat.jar;C:\Users\Administrator\Documents\NetBeansJDKs\zulu8.84.0.15-ca-jdk8.0.442-win_x64\zulu8.84.0.15-ca-jdk8.0.442-win_x64\jre\classes"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.specification.maintenance.version" value="6"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans-17\netbeans\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="db.DBUtilsTest" name="db.DBUtilsTest.testAddUser" time="0.461">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at db.DBUtils.addUser(DBUtils.java:58)
+	at db.DBUtilsTest.testAddUser(DBUtilsTest.java:63)
+</failure>
+    <system-out>addUser
+</system-out>
+  </testcase>
+  <testcase classname="db.DBUtilsTest" name="db.DBUtilsTest.testGetUserType" time="0.036">
+    <failure message="expected: &lt;&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;&gt; but was: &lt;null&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at db.DBUtilsTest.testGetUserType(DBUtilsTest.java:95)
+</failure>
+    <system-out>getUserType
+</system-out>
+  </testcase>
+  <testcase classname="db.DBUtilsTest" name="db.DBUtilsTest.testGetBookings" time="0.006">
+    <failure message="expected: &lt;null&gt; but was: &lt;[db.Booking@2758fe70, db.Booking@1f36e637, db.Booking@578486a3, db.Booking@551aa95a, db.Booking@35d176f7, db.Booking@1dfe2924, db.Booking@6ebc05a6, db.Booking@6e6c3152, db.Booking@50b494a6, db.Booking@3cef309d, db.Booking@32709393, db.Booking@3d99d22e, db.Booking@49fc609f, db.Booking@cd2dae5, db.Booking@3a883ce7]&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;null&gt; but was: &lt;[db.Booking@2758fe70, db.Booking@1f36e637, db.Booking@578486a3, db.Booking@551aa95a, db.Booking@35d176f7, db.Booking@1dfe2924, db.Booking@6ebc05a6, db.Booking@6e6c3152, db.Booking@50b494a6, db.Booking@3cef309d, db.Booking@32709393, db.Booking@3d99d22e, db.Booking@49fc609f, db.Booking@cd2dae5, db.Booking@3a883ce7]&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at db.DBUtilsTest.testGetBookings(DBUtilsTest.java:109)
+</failure>
+    <system-out>getBookings
+</system-out>
+  </testcase>
+  <testcase classname="db.DBUtilsTest" name="db.DBUtilsTest.testGetUsers" time="0.006">
+    <failure message="expected: &lt;null&gt; but was: &lt;[db.User@57855c9a, db.User@3b084709, db.User@3224f60b, db.User@63e2203c, db.User@1efed156, db.User@6737fd8f, db.User@72b6cbcc, db.User@a7e666, db.User@68bbe345, db.User@30b8a058, db.User@7494e528, db.User@4bbfb90a, db.User@7c29daf3, db.User@9660f4e, db.User@5a8806ef]&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;null&gt; but was: &lt;[db.User@57855c9a, db.User@3b084709, db.User@3224f60b, db.User@63e2203c, db.User@1efed156, db.User@6737fd8f, db.User@72b6cbcc, db.User@a7e666, db.User@68bbe345, db.User@30b8a058, db.User@7494e528, db.User@4bbfb90a, db.User@7c29daf3, db.User@9660f4e, db.User@5a8806ef]&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at db.DBUtilsTest.testGetUsers(DBUtilsTest.java:49)
+</failure>
+    <system-out>getUsers
+</system-out>
+  </testcase>
+  <testcase classname="db.DBUtilsTest" name="db.DBUtilsTest.testGetBills" time="0.006">
+    <failure message="expected: &lt;null&gt; but was: &lt;[db.Bill@5d76b067, db.Bill@2a17b7b6, db.Bill@4f063c0a, db.Bill@1e6d1014, db.Bill@76707e36, db.Bill@614ddd49, db.Bill@1f554b06, db.Bill@694e1548, db.Bill@1c3a4799, db.Bill@131276c2, db.Bill@26aa12dd, db.Bill@3fd7a715, db.Bill@711f39f9, db.Bill@71bbf57e, db.Bill@7f13d6e, db.Bill@51cdd8a, db.Bill@d44fc21, db.Bill@23faf8f2, db.Bill@2d6eabae, db.Bill@4e7dc304, db.Bill@64729b1e]&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;null&gt; but was: &lt;[db.Bill@5d76b067, db.Bill@2a17b7b6, db.Bill@4f063c0a, db.Bill@1e6d1014, db.Bill@76707e36, db.Bill@614ddd49, db.Bill@1f554b06, db.Bill@694e1548, db.Bill@1c3a4799, db.Bill@131276c2, db.Bill@26aa12dd, db.Bill@3fd7a715, db.Bill@711f39f9, db.Bill@71bbf57e, db.Bill@7f13d6e, db.Bill@51cdd8a, db.Bill@d44fc21, db.Bill@23faf8f2, db.Bill@2d6eabae, db.Bill@4e7dc304, db.Bill@64729b1e]&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at db.DBUtilsTest.testGetBills(DBUtilsTest.java:138)
+</failure>
+    <system-out>getBills
+</system-out>
+  </testcase>
+  <testcase classname="db.DBUtilsTest" name="db.DBUtilsTest.testAddBill" time="0.003">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at db.DBUtils.addBill(DBUtils.java:190)
+	at db.DBUtilsTest.testAddBill(DBUtilsTest.java:152)
+</failure>
+    <system-out>addBill
+</system-out>
+  </testcase>
+  <testcase classname="db.DBUtilsTest" name="db.DBUtilsTest.testAddBooking" time="0.004">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at db.DBUtils.addBooking(DBUtils.java:147)
+	at db.DBUtilsTest.testAddBooking(DBUtilsTest.java:123)
+</failure>
+    <system-out>addBooking
+</system-out>
+  </testcase>
+  <testcase classname="db.DBUtilsTest" name="db.DBUtilsTest.testGetVehicles" time="0.006">
+    <failure message="expected: &lt;null&gt; but was: &lt;[db.Vehicle@1d29cf23, db.Vehicle@5f282abb, db.Vehicle@167fdd33, db.Vehicle@1e965684, db.Vehicle@4d95d2a2, db.Vehicle@53f65459, db.Vehicle@3b088d51, db.Vehicle@1786dec2]&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;null&gt; but was: &lt;[db.Vehicle@1d29cf23, db.Vehicle@5f282abb, db.Vehicle@167fdd33, db.Vehicle@1e965684, db.Vehicle@4d95d2a2, db.Vehicle@53f65459, db.Vehicle@3b088d51, db.Vehicle@1786dec2]&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at db.DBUtilsTest.testGetVehicles(DBUtilsTest.java:167)
+</failure>
+    <system-out>getVehicles
+</system-out>
+  </testcase>
+  <testcase classname="db.DBUtilsTest" name="db.DBUtilsTest.testAddVehicle" time="0.003">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at db.DBUtils.addVehicle(DBUtils.java:231)
+	at db.DBUtilsTest.testAddVehicle(DBUtilsTest.java:181)
+</failure>
+    <system-out>addVehicle
+</system-out>
+  </testcase>
+  <testcase classname="db.DBUtilsTest" name="db.DBUtilsTest.testValidateUserLogin" time="0.004">
+    <failure message="The test case is a prototype." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:109)
+	at db.DBUtilsTest.testValidateUserLogin(DBUtilsTest.java:82)
+</failure>
+    <system-out>validateUserLogin
+</system-out>
+  </testcase>
+</testsuite>

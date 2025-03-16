@@ -1,0 +1,75 @@
+-------------------------------------------------------------------------------
+Test set: db.DBUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 0.536 sec <<< FAILURE!
+db.DBUtilsTest.testAddUser()  Time elapsed: 0.461 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at db.DBUtils.addUser(DBUtils.java:58)
+	at db.DBUtilsTest.testAddUser(DBUtilsTest.java:63)
+
+db.DBUtilsTest.testGetUserType()  Time elapsed: 0.036 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <> but was: <null>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at db.DBUtilsTest.testGetUserType(DBUtilsTest.java:95)
+
+db.DBUtilsTest.testGetBookings()  Time elapsed: 0.006 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <[db.Booking@2758fe70, db.Booking@1f36e637, db.Booking@578486a3, db.Booking@551aa95a, db.Booking@35d176f7, db.Booking@1dfe2924, db.Booking@6ebc05a6, db.Booking@6e6c3152, db.Booking@50b494a6, db.Booking@3cef309d, db.Booking@32709393, db.Booking@3d99d22e, db.Booking@49fc609f, db.Booking@cd2dae5, db.Booking@3a883ce7]>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at db.DBUtilsTest.testGetBookings(DBUtilsTest.java:109)
+
+db.DBUtilsTest.testGetUsers()  Time elapsed: 0.006 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <[db.User@57855c9a, db.User@3b084709, db.User@3224f60b, db.User@63e2203c, db.User@1efed156, db.User@6737fd8f, db.User@72b6cbcc, db.User@a7e666, db.User@68bbe345, db.User@30b8a058, db.User@7494e528, db.User@4bbfb90a, db.User@7c29daf3, db.User@9660f4e, db.User@5a8806ef]>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at db.DBUtilsTest.testGetUsers(DBUtilsTest.java:49)
+
+db.DBUtilsTest.testGetBills()  Time elapsed: 0.006 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <[db.Bill@5d76b067, db.Bill@2a17b7b6, db.Bill@4f063c0a, db.Bill@1e6d1014, db.Bill@76707e36, db.Bill@614ddd49, db.Bill@1f554b06, db.Bill@694e1548, db.Bill@1c3a4799, db.Bill@131276c2, db.Bill@26aa12dd, db.Bill@3fd7a715, db.Bill@711f39f9, db.Bill@71bbf57e, db.Bill@7f13d6e, db.Bill@51cdd8a, db.Bill@d44fc21, db.Bill@23faf8f2, db.Bill@2d6eabae, db.Bill@4e7dc304, db.Bill@64729b1e]>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at db.DBUtilsTest.testGetBills(DBUtilsTest.java:138)
+
+db.DBUtilsTest.testAddBill()  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at db.DBUtils.addBill(DBUtils.java:190)
+	at db.DBUtilsTest.testAddBill(DBUtilsTest.java:152)
+
+db.DBUtilsTest.testAddBooking()  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at db.DBUtils.addBooking(DBUtils.java:147)
+	at db.DBUtilsTest.testAddBooking(DBUtilsTest.java:123)
+
+db.DBUtilsTest.testGetVehicles()  Time elapsed: 0.006 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <[db.Vehicle@1d29cf23, db.Vehicle@5f282abb, db.Vehicle@167fdd33, db.Vehicle@1e965684, db.Vehicle@4d95d2a2, db.Vehicle@53f65459, db.Vehicle@3b088d51, db.Vehicle@1786dec2]>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at db.DBUtilsTest.testGetVehicles(DBUtilsTest.java:167)
+
+db.DBUtilsTest.testAddVehicle()  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at db.DBUtils.addVehicle(DBUtils.java:231)
+	at db.DBUtilsTest.testAddVehicle(DBUtilsTest.java:181)
+
+db.DBUtilsTest.testValidateUserLogin()  Time elapsed: 0.004 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:109)
+	at db.DBUtilsTest.testValidateUserLogin(DBUtilsTest.java:82)
+

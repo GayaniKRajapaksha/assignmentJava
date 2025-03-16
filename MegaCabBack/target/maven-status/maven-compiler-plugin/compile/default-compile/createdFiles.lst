@@ -1,0 +1,12 @@
+com\megacab\megacabback\resources\JakartaEE8Resource.class
+service\BookingService.class
+service\Gson.class
+service\VehicleService.class
+db\Bill.class
+service\UserService.class
+service\BillingService.class
+db\User.class
+db\Booking.class
+com\megacab\megacabback\JakartaRestConfiguration.class
+db\Vehicle.class
+db\DBUtils.class
